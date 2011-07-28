@@ -1,0 +1,23 @@
+!!! 5
+%head
+  %title="Alamo Square"
+  %meta{:content => "Alamo Square, a publication, a place.", :name => "description"}/
+  %meta{:content => "The Alamo Square Groupe", :name => "author"}/
+  / Mobile viewport optimized: j.mp/bplateviewport
+  %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+%body
+  = yield
+  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+  %script{:src => "/javascripts/jquery.backstretch.min.js"}
+  :javascript
+    $.backstretch('http://www.bcx.org/photos/places/cities/us/ca/sf/parks/alamosq/AlamoSquare2008_3899B.jpg');    
+    
+  :javascript
+    var _gaq = [['_setAccount', 'UA-1098906-8'], ['_trackPageview']];
+    (function(d, t) {
+     var g = d.createElement(t),
+         s = d.getElementsByTagName(t)[0];
+     g.async = true;
+     g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     s.parentNode.insertBefore(g, s);
+    })(document, 'script');
