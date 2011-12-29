@@ -7,11 +7,22 @@
   %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
 %body
   = yield
+  %link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/page.css"}
   %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
-  %script{:src => "/javascripts/jquery.backstretch.min.js"}
-  :javascript
-    $.backstretch('http://www.bcx.org/photos/places/cities/us/ca/sf/parks/alamosq/AlamoSquare2008_3899B.jpg');    
-    
+  %script{:src => "/javascripts/underscore.min.js"}
+  %script{:src => "/javascripts/oo-backstretch.min.js"}
+  %script{:src => "/application.js"}
+  .container
+    .key
+      .macbookKey.fl#keyLeft
+        .macbookKeyInner
+          .macbookLeftArrow
+            return
+    :plain
+      <a href="https://twitter.com/alamosq" class="twitter-follow-button" data-show-count="false" data-size="large" id="follow">Follow @alamosq</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
   :javascript
     var _gaq = [['_setAccount', 'UA-1098906-8'], ['_trackPageview']];
     (function(d, t) {
