@@ -11,16 +11,16 @@
 /* 1.0 Defaults
 -------------------------------------------------- */
 html {
-	font-family: "Helvetica Neue", Helvetica, Arial;
-	background-color: #111;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  background-color: #111;
 }
 
 /* 2.0 Default Landing Page
 -------------------------------------------------- */
 .twitter-follow-button {
-	position: absolute;
-	left: 80px;
-	bottom: 35%;
+  position: absolute;
+  left: 80px;
+  bottom: 35%;
 }
 
 .key {
@@ -29,8 +29,8 @@ html {
   overflow: visible;
   position: absolute;
   opacity: 0.9;
-	right: 80px;
-	bottom: 35%;
+  right: 80px;
+  bottom: 35%;
 }
 
 .macbookKey {
@@ -62,10 +62,10 @@ html {
 }
 
 .macbookLeftArrow {
-	font-size: 14px;
-	text-align: right;
-	padding-top: 30px;
-	margin-right: 15px;
+  font-size: 14px;
+  text-align: right;
+  padding-top: 30px;
+  margin-right: 15px;
 }
 
 .keyDown .macbookKeyInner {
@@ -89,15 +89,19 @@ html {
 
 /* Mobile Only */
 @media all and (max-width: 640px) {
+  body {
+    min-height: 400px;
+  }
   html {
-  	-webkit-text-size-adjust: none;  
-  	-webkit-tap-highlight-color: transparent;
-  	-webkit-appearance:none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance:none;
+    margin-bottom: 100px;
   } 
   .key {
     bottom: 45%;
     right: auto;
-    margin-left: 77px;
+    margin: 0 0 40px 77px;
     -webkit-user-select: none;
   }
 }
