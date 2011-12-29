@@ -9,3 +9,7 @@ gem "haml"
 group :development do
   gem "unicorn"
 end
+
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
