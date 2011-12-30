@@ -87,10 +87,14 @@ html {
 /* 3.0 Media Queries
 -------------------------------------------------- */
 
-/* Mobile Only */
+/* Mobile */
 @media all and (max-width: 640px) {
   body {
     min-height: 400px;
+    overflow-x: hidden;
+  }
+  iframe {
+    max-width: 200px !important;
   }
   html {
     -webkit-text-size-adjust: none;
@@ -98,10 +102,27 @@ html {
     -webkit-appearance:none;
     margin-bottom: 100px;
   } 
+  .twitter-follow-button {
+    bottom: auto;
+    margin: 240px 0 0 4px;
+  }
   .key {
-    bottom: 45%;
+    bottom: auto;
     right: auto;
-    margin: 0 0 40px 77px;
+    margin: 150px 0 40px 81px;
     -webkit-user-select: none;
+  }
+}
+
+/* Mobile Landscape  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    min-height: 300px;
+  }
+  .twitter-follow-button {
+    margin: 150px 0 0 80px;
+  }
+  .key {
+    margin: 70px 0 40px 160px;
   }
 }
