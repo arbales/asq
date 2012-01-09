@@ -9,11 +9,11 @@ bg = new Backstretch "/images/backgrounds/" + next() + ".jpg", {speed: 1000}
       
 $(document).ready ->
 	
-  raiseBar()
+  #raiseBar()
 
   _down = (event) ->
     event.preventDefault()
-    $(".key").addClass("keyDown")
+    $(".key").first().addClass("keyDown")
     bg.change_source "/images/backgrounds/#{next()}.jpg"
 
   down = (event) ->
@@ -22,7 +22,7 @@ $(document).ready ->
 
   _up = (event) ->
     event.preventDefault()
-    $(".key").removeClass("keyDown")
+    $(".key").first().removeClass("keyDown")
   
   up = (event) ->
     if event.which is 13

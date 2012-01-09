@@ -187,7 +187,7 @@ iframe{
 	height: auto;
 	padding:10px;
 	text-align:center;
-	background-color: rgba(0, 0, 0, 0.2);
+	letter-spacing:-1px;
 	font-family:"Helvetica-Neue", Arial;
 	font-weight:bold;
 	font-size:60px;
