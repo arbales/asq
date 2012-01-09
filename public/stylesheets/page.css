@@ -13,11 +13,10 @@ html {
 .key {
     overflow: hidden;
 
-    margin-left: -190px;
     overflow: visible;
     position: absolute;
     opacity: 0.9;
-	right: 80px;
+	right: 30px;
 	bottom: 35%;
 }
 
@@ -75,4 +74,15 @@ position: relative;
 
 .full{
     opacity:1;
+}
+
+
+.rightPane{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 240px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	
 }
