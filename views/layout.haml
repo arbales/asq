@@ -19,6 +19,18 @@
         .macbookKeyInner
           .macbookLeftArrow
             return
+
+    :javascript
+      function raiseBar() {
+        if( !window.location.hash && window.addEventListener ){
+          window.addEventListener( "load",function() {
+            setTimeout(function(){
+              window.scrollTo(0, 0);
+            }, 0);
+          });
+        }
+      }
+
     :plain
       <a href="https://twitter.com/alamosq" class="twitter-follow-button" data-show-count="false" data-size="large" id="follow">Follow @alamosq</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

@@ -8,6 +8,8 @@ next = ->
 bg = new Backstretch "/images/backgrounds/" + next() + ".jpg", {speed: 1000}
       
 $(document).ready ->
+	
+  raiseBar()
 
   _down = (event) ->
     event.preventDefault()
@@ -21,7 +23,6 @@ $(document).ready ->
   _up = (event) ->
     event.preventDefault()
     $(".key").removeClass("keyDown")
-
   
   up = (event) ->
     if event.which is 13

@@ -69,3 +69,21 @@ $ ./bin/unicorn
 ```
 
 Now browse to <http://localhost:8080/> and get going.
+
+### Contributing
+
+```sh
+$ cd /path/to/asq
+$ git checkout -tb awesome-thing
+$ # Do stuff
+$ git add <files>
+$ git commit -m Added files
+$ git push origin master
+```
+
+#### Deploying it to Heroku
+```sh
+$ cd /path/to/asq
+$ git push heroku master
+$ # success in the cloud
+```
