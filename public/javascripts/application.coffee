@@ -9,7 +9,7 @@ bg = new Backstretch "/images/backgrounds/" + next() + ".jpg", {speed: 1000}
       
 $(document).ready ->
 	
-  #raiseBar()
+  raiseBar()
 
   _down = (event) ->
     event.preventDefault()
